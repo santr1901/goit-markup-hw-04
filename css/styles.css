@@ -7,6 +7,7 @@
 --bkground-color-one: #2F303A;
 --bkground-color-two: #F5F4FA;
 --header-line-color: #ECECEC;
+--icons-color: #AFB1B8;
 --box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 --border-line-color: #EEEEEE;
 --hover-button: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -191,6 +192,16 @@ border-radius: 4px;
   margin-top: 30px;
 }
 
+.advantage-icon {
+  height: 120px;
+  background-color: var(--bkground-color-two);
+  border-radius: 4px;
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .advantage-title {
   font-weight: 700;
   line-height: 1.14;
@@ -280,21 +291,65 @@ display: flex;
 justify-content: center;
 align-items: center;
 border-radius: 50%;
+color: var(--icons-color);
 }
 
 .social-link-icon {
-  fill: var(--second-color);
+  fill: currentColor;
 }
 
 .social-link:hover,
 .social-link:focus {
-  background-color: #2196F3;
+  background-color: var(--accent-color);
+  color: var(--third-color);
 }
 
-.social-link:hover .social-link-icon,
-.social-link:focus .social-link-icon {
-  fill:var(--third-color);
+.clients-list {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: -30px;
+  margin-left: -30px;
+  align-items: center;
+  justify-content: center;
+
 }
+
+/* .clients-item {
+  flex-basis: calc(100%/6 - 30px);
+  margin-left: 30px;
+  margin-top: 30px;
+  border: 1px solid var(--icons-color);
+  border-radius: 4px;
+  
+} */
+
+.clients-link {
+  width: 170px;
+  height: 92px;
+  flex-basis: calc(100%/6 - 30px);
+  margin-left: 30px;
+  margin-top: 30px;
+  border: 1px solid var(--icons-color);
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--icons-color);
+}
+
+.clients-link-icon {
+  fill: currentColor;
+}
+
+.clients-link:hover,
+.clients-link:focus{
+  border-color: var(--accent-color);
+  color: var(--accent-color);
+}
+
+
 
 /*------------------------------------Footer-------------------------------------------*/
 .footer {
